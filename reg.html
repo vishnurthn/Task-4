@@ -6,49 +6,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Registration Page</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #1f1f2f;
-      color: white;
-      padding: 20px;
-    }
-    .form-container {
-      background: #2c2c3e;
-      max-width: 500px;
-      margin: auto;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px #00ffe1;
-    }
-    input, select {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 5px;
-    }
-    label {
-      display: block;
-      margin-top: 10px;
-    }
-    .btn {
-      background: #00ffe1;
-      color: #000;
-      font-weight: bold;
-      border: none;
-      padding: 12px;
-      border-radius: 5px;
-      cursor: pointer;
-      width: 100%;
-      margin-top: 15px;
-    }
-    .btn:hover {
-      background: #00bfa5;
-    }
-    .heading {
-      text-align: center;
-      color: #00ffe1;
-    }
+   body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.form-container {
+  background-color: #2c2c2c;
+  color: white;
+  width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-title {
+  background-color: #f5f5f5;
+  color: red;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 2px solid red;
+  background: transparent;
+  color: rgb(194, 141, 141);
+}
+
+::placeholder {
+  color: lightgray;
+}
+
+.label {
+  text-align: left;
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.gender-group {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.gender-group label {
+  font-size: 14px;
+}
+
+.btn {
+  background-color: red;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: darkred;
+}
+
+.contact-info {
+  background-color: #f5f5f5;
+  color: red;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}
   </style>
 </head>
 <body>
