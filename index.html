@@ -3,161 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Event Schedule & Registration</title>
+  <title>Schedule Page</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #fff;
-      padding: 20px;
+      background-color: #0f0c29;
+      color: white;
+      padding: 30px;
     }
-
     h1 {
-      font-weight: bold;
-      margin-bottom: 40px;
-      padding-left: 570px;
-      font-size: 40px;
+      text-align: center;
+      color: #00ffe1;
     }
-
-    .schedule {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+    ul {
+      max-width: 600px;
+      margin: auto;
+      padding: 0;
+      list-style: none;
     }
-
-    .session {
-      background-color: #1e1e1e;
+    li {
+      background: #302b63;
+      margin: 15px 0;
       padding: 15px;
-      border-left: 5px solid #00bcd4;
-      border-radius: 5px;
-      display: flex;
-      flex-direction: column;
+      border-radius: 8px;
     }
-
-    .session-time {
+    .btn {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      background: #00ffe1;
+      color: #000;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
       font-weight: bold;
-      color: #00bcd4;
-      margin-bottom: 5px;
-    }
-
-    .session-title {
-      font-size: 1.1em;
-      margin-bottom: 10px;
-      margin-top: 10px;
-    }
-    h2{
-        padding-left: 660px;
-        font-size: 30px;
-    }
- .btn {
-  background-color: red;
-  color: white;
-  padding: 12px;
-  width: 100%;
-  border: none;
-  border-radius: 8px;
-  margin-top: 15px;
-  font-weight: bold;
-  cursor: pointer;
-}
-.btn:hover {
-  background-color: darkred;
-}
-    @media (min-width: 600px) {
-      .session {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      .session-info {
-        display: flex;
-        flex-direction: column;
-      }
     }
   </style>
 </head>
 <body>
-
-  <h1> Event Schedule</h1>
-  <h2>DAY-1</h2>
-  <div class="schedule">
-    <div class="session">
-      <div class="session-info">
-        <div class="session-time">08:00 AM - 10:00 AM</div>
-        <div class="session-title">Pushing the Boundaries: Innovations in General Intelligence and Scientific Discovery</div>
-      </div>
-   
-    </div>
-
-    <div class="session">
-      <div class="session-info">
-        <div class="session-time">10:00 AM - 11:00 AM</div>
-        <div class="session-title">Driving Innovation Through Responsible AI at Scale</div>
-      </div>
-
-    </div>
-
-    <div class="session">
-      <div class="session-info">
-        <div class="session-time">11:15 AM - 12:30 PM</div>
-        <div class="session-title">The Future of Jobs: AI, Automation, and What It Means for You</div>
-      </div>
-    
-    </div>
-
-    <div class="session">
-      <div class="session-info">
-        <div class="session-time">01:30 PM - 03:00 PM</div>
-        <div class="session-title">Decentralized AI Innovation: Building Global Tech from Rural India</div>
-      </div>
-    
-    </div>
-
-    
-      
-    </div>
-  </div>
-  <h2>DAY-2</h2>
-    <div class="schedule">
-    <div class="session">
-      <div class ="session-info">
-        <div class="session-time">08:00 AM - 10:00 AM</div>
-        <div class="session-title">How to Start a Career in AI: Skills, Tools, and Roadmaps</div>
-      </div>
-   
-    </div>
-
-    <div class="session">
-      <div class="session-info">
-        <div class="session-time">10:00 AM - 11:00 AM</div>
-        <div class="session-title">The Next Wave of Innovation: Self-Supervised AI for Embodied Intelligence</div>
-      </div>
-
-    </div>
-
-    <div class="session">
-      <div class="session-info">
-        <div class="session-time">11:15 AM - 12:30 PM</div>
-        <div class="session-title">The Rise of Generative AI: ChatGPT, DALL·E, and the New Creative Revolution”
-
-Emerging innovations in AI for surveillance, drones, and defense autonomy.</div>
-      </div>
-    
-    </div>
-
-    <div class="session">
-      <div class="session-info">
-        <div class="session-time">01:30 PM - 03:00 PM</div>
-        <div class="session-title">Reimagining Workflow Innovation: No-Code AI for the Next Billion Users</div>
-      </div>
-    
-    </div>
-
-    </div>
-  </div>
-<a href="index1.html"><button>Click Here for More Details</button></a>
+  <h1>Event Schedule</h1>
+  <ul>
+    <li><strong>Day 1 - 8:00 AM:</strong> Opening Ceremony & Keynote</li>
+    <li><strong>Day 1 - 10:00 AM:</strong> AI in Industry Panel</li>
+    <li><strong>Day 2 - 8:00 AM:</strong> Workshops & Hands-on Labs</li>
+    <li><strong>Day 2 - 2:00 PM:</strong> Closing Ceremony & Awards</li>
+  </ul>
+  <a href="page2.html" class="btn">Meet Our Speakers →</a>
 </body>
 </html>
-
-
