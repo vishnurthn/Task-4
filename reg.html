@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Page</title>
+  <link rel="stylesheet" href="reg.css" />
+</head>
+<body>
+  <h1 class="heading">TechWave 2025 – Future of AI and Innovation</h1>
+  <div class="form-container">
+    <h2 class="form-title">Contact Us</h2>
+    <form action="confirm.html" method="GET">
+  <input type="text" name="name" placeholder="Enter your Name" required />
+  <input type="text" name="number" placeholder="Enter your Number" required />
+  <input type="number" name="age" placeholder="Enter Age" required />
+
+  <label class="label">Gender:</label>
+  <div class="gender-group">
+    <label><input type="radio" name="gender" value="male" /> Male</label>
+    <label><input type="radio" name="gender" value="female" /> Female</label>
+    <label><input type="radio" name="gender" value="other" /> Other</label>
+  </div>
+
+  <input type="email" name="email" placeholder="Enter Email ID" required />
+
+  <label class="label" for="role">Choose a Role:</label>
+  <select id="role" name="role" required>
+    <option value="">-- Select --</option>
+    <option value="developer">Developer</option>
+    <option value="Student">Student</option>
+    <option value="Professional">Professional</option>
+    <option value="Other">Other</option>
+  </select>
+
+  <button type="submit" class="btn">Confirm</button>
+</form>
+
+    <div class="contact-info">Our Contact: <strong>98765432</strong></div>
+  </div>
+</body>
+</html>

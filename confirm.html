@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Summary</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+    .summary-box {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: green;
+    }
+    p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    h1{
+      font-family: fantasy;
+      color: rgb(187, 95, 10);
+      font-size: xx-large;
+    }
+    h3{
+        font-size: 90px;
+    }
+  </style>
+</head>
+<body>
+  <div class="summary-box">
+    <h2>Registration Successful!</h2>
+    <p><strong>Name:</strong> <span id="name"></span></p>
+    <p><strong>Number:</strong> <span id="number"></span></p>
+    <p><strong>Age:</strong> <span id="age"></span></p>
+    <p><strong>Gender:</strong> <span id="gender"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Role:</strong> <span id="role"></span></p>
+  </div>
+
+  <script>
+  const params = new URLSearchParams(window.location.search);
+  document.getElementById("name").textContent = params.get("name");
+  document.getElementById("number").textContent = params.get("number");
+  document.getElementById("age").textContent = params.get("age");
+  document.getElementById("gender").textContent = params.get("gender");
+  document.getElementById("email").textContent = params.get("email");
+  document.getElementById("role").textContent = params.get("role");
+</script>
+<h1>Thank You For The Registration</h1><br><h3>🙏🏼</h3>
+</body>
+</html>
